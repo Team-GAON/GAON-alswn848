@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="input" onkeydown="handleTyping()">
+    <script>
+        const handleTyping = () => { 
+            const input = document.getElementById('input')
+            console.log(input.value)
+        }
+    </script>
 </body>
 </html>
