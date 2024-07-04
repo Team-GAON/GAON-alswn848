@@ -30,8 +30,8 @@
             border-radius: 5px;
             margin: 5px;
         }
-        #signin{
-            width: 200px;
+        #signup{
+            width: 300px;
             height: 40px;
             background-color: rgb(255, 135, 165);
             color: rgb(255, 255, 255);
@@ -42,23 +42,25 @@
         }
         .text{
             font-size: 25pt;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
-        span{
-            font-size: 8pt;
+        a{
+            font-size: 10pt;
             color: hotpink;
-            margin-left: 160px;
+            margin-top: 5px;
+            margin-left: 250px;
+            text-decoration : none;
         }
     </style>
 </head>
 <body id="app">
     <form>
         <div class="a">
-                <div class="text"><b>SIGN IN</b></div>
+                <div class="text"><b>SIGN UP</b></div>
                 <input type="text" id="id" placeholder=" 아이디를 입력하세요" onchange="handleTyping()">
                 <input type="password" id="pw" placeholder=" 비밀번호를 입력하세요" onchange="handleTyping()">
                 <input type="password" id="pwcheck" placeholder=" 비밀번호를 한번 더 입력하세요" onchange="handleTyping()">
-                <input type="reset" id="signin" value="sign in" onclick="signin()">
+                <input type="reset" id="signup" value="sign up" onclick="signup()">
                 <a href="./login.html"><span><b>로그인</b></span></a>
         </div>
     </form>
@@ -72,9 +74,9 @@
             console.log(pwcheck);
         }
         
-        const login = document.getElementById('sigin')
+        const signup = document.getElementById('signup')
 
-        signin.addEventListener('click', () => {
+        signup.addEventListener('click', () => {
             alert('회원가입 되었습니다')
         });
     </script>
